@@ -22,8 +22,8 @@
 			<p>Стрит-фуд кафе вьетнамской кухни Joly Woo исполняется 2 года!<br>
 Мы открываем четвертое кафе в сердце Петербурга<br>
 и запускаем грандиозный парад призов!</p>
-			<a href="#" class="button green">Выиграть поездку во&nbsp;Вьетнам</a>
-			<a href="#" class="arrow">
+			<a href=".contest" class="button green go_to">Выиграть поездку во&nbsp;Вьетнам</a>
+			<a href=".try-new" class="arrow go_to">
 				<img src="assets/img/arrow.png" alt="down">
 			</a>
 		</section>
@@ -67,16 +67,16 @@
 				<p>В честь своего дня рождения Joly Woo разыгрывает поездку во Вьетнам. Участвуйте в конкурсе — и отдыхайте в стране гастрономических удовольствий! Расскажите, почему вы хотите отправиться во Вьетнам, и заполните анкету:</p>
 				<form>
 					<div>
-						<input type="text" placeholder="Имя">
-						<input type="text" placeholder="Телефон">
-						<input type="text" placeholder="E-mail">
+						<input type="text" required placeholder="Имя">
+						<input type="text" required placeholder="Телефон">
+						<input type="text" required placeholder="E-mail">
 						<div class="checkbox-container">
 							<input type="checkbox" checked required name="">
 							<label>Я согласен на обработку персональных данных, получение рекламной информаци в соответствии с условиями политики конфиденциальности</label>
 						</div>
 					</div>
 					<div>
-						<textarea placeholder="Ради чего вы хотите поехать во Вьетнам?"></textarea>
+						<textarea required placeholder="Ради чего вы хотите поехать во Вьетнам?"></textarea>
 						<div class="contens-send">
 							<a href="#" class="button">Рассказать друзьям</a>
 							<button class="button green">Отправить</button>
@@ -130,9 +130,9 @@
 				<p>Новый стрит-фуд откроется 15 июля, а первых гостей ждет приятный бонус — скидка 50% на всё меню с 15 по 22 июля, не пропусти!</p>
 				<form>
 					<div>
-						<input type="text" placeholder="Имя">
-						<input type="text" placeholder="Телефон">
-						<input type="text" placeholder="E-mail">
+						<input type="text" required placeholder="Имя">
+						<input type="text" required placeholder="Телефон">
+						<input type="text" required placeholder="E-mail">
 						<button class="button green">Напомнить</button>
 					</div>
 					<div class="checkbox-container">
@@ -204,19 +204,19 @@
 					<img src="assets/img/logo-dark.png" alt="JolyWoo Logo">
 				</a>
 				<ul class="footer-menu">
-					<li><a href="#">Главная</a></li>
-					<li><a href="#">Конкурс</a></li>
-					<li><a href="#">JolyWoo Садовая</a></li>
-					<li><a href="#">Открытие</a></li>
-					<li><a href="#">О JolyWoo</a></li>
-					<li><a href="#">Меню</a></li>
-					<li><a href="#">Галерея</a></li>
-					<li><a href="#">Контакты</a></li>
+					<li><a class="go_to" href=".head">Главная</a></li>
+					<li><a class="go_to" href=".try-new">О JolyWoo</a></li>
+					<li><a class="go_to" href=".contest">Конкурс</a></li>
+					<li><a class="go_to" href=".menu">Меню</a></li>
+					<li><a class="go_to" href=".places">JolyWoo Садовая</a></li>
+					<li><a class="go_to" href=".remind">Открытие</a></li>
+					<li><a class="go_to" href=".slick-slider">Галерея</a></li>
+					<li><a class="go_to" href=".contacts-card">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="authors sm-container">
 				<span>JolyWoo 2018 &copy;</span>
-				<span><a>Политика конфиденциальности</a></span>
+				<span><a href="#">Политика конфиденциальности</a></span>
 				<span>Сайт разработан <a href="#">SKYSPACEPRO*</a></span>
 			</div>
 		</section>

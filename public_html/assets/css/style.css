@@ -476,14 +476,14 @@ textarea {
 	padding-bottom: 25px; }
 
 .footer-menu {
-	/*column-count: 4;
-	column-gap: 40px;*/
 	grid-template-columns: minmax(max-content, 200px) minmax(max-content, 200px) minmax(max-content, 200px) minmax(max-content, 200px) ;
 	display: grid;
 	list-style: none;
 	text-align: left;
 	width: 600px;
-	margin-left: 80px; }
+	margin-left: 80px;
+	grid-auto-flow: column;
+    grid-template-rows: 1fr 1fr; }
 
 .authors {
 	font-size: 10px;
@@ -675,6 +675,8 @@ textarea {
 		margin: 20px auto 0;
 		font-size: 14px;
 		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: repeat(4, 1fr);
+		grid-gap: 5px;
 		width: 100%;
 		text-align: center; }
 
