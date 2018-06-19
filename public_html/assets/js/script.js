@@ -74,3 +74,7 @@ $("#form1, #form2").submit(function (e) {
             }
         }), e.preventDefault()
     });
+
+$(document).ready(function(){
+    $('.head').css('height',$(window).height());
+});

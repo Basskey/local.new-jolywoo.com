@@ -177,7 +177,7 @@ textarea {
 
 .head {
 	background-image: url(../img/bg-head.jpg);
-	height: 800px;
+	min-height: 700px;
 	background-position: top center;
 	background-repeat: no-repeat;
 	color: #ffffff;
