@@ -66,21 +66,21 @@
 			<div class="sm-container">
 				<h1 class="txt-green">Выиграй поездку во вьетнам!</h1>
 				<p>В честь своего дня рождения Joly Woo разыгрывает поездку во Вьетнам. Участвуйте в конкурсе — и отдыхайте в стране гастрономических удовольствий! Расскажите, почему вы хотите отправиться во Вьетнам, и заполните анкету:</p>
-				<form>
+				<form action="#" id="form1">
 					<div>
-						<input type="text" required placeholder="Имя">
-						<input type="text" required placeholder="Телефон">
-						<input type="text" required placeholder="E-mail">
+						<input id="input1" type="text" required placeholder="Имя" name="lid[name]">
+						<input id="input2" type="text" required placeholder="Телефон" name="lid[phone]">
+						<input id="input3" type="text" required placeholder="E-mail" name="lid[email]">
 						<div class="checkbox-container">
 							<input type="checkbox" checked required name="">
 							<label>Я согласен на обработку персональных данных, получение рекламной информаци в соответствии с условиями политики конфиденциальности</label>
 						</div>
 					</div>
 					<div>
-						<textarea required placeholder="Ради чего вы хотите поехать во Вьетнам?"></textarea>
+						<textarea required placeholder="Ради чего вы хотите поехать во Вьетнам?" name="Story"></textarea>
 						<div class="contens-send">
 							<a href="#" class="button">Рассказать друзьям</a>
-							<button class="button green">Отправить</button>
+							<button class="button green" type="submit">Отправить</button>
 						</div>
 					</div>
 				</form>
@@ -129,12 +129,12 @@
 			<div class="mid-container">
 				<h2 class="txt-green">ОТКРЫТИЕ JOLY WOO САДОВАЯ</h2>
 				<p>Новый стрит-фуд откроется 15 июля, а первых гостей ждет приятный бонус — скидка 50% на всё меню с 15 по 22 июля, не пропусти!</p>
-				<form>
+				<form action="#" id="form2">
 					<div>
-						<input type="text" required placeholder="Имя">
-						<input type="text" required placeholder="Телефон">
-						<input type="text" required placeholder="E-mail">
-						<button class="button green">Напомнить</button>
+						<input id="input4" type="text" required placeholder="Имя" name="lid[name]">
+						<input id="input5" type="text" required placeholder="Телефон" name="lid[phone]">
+						<input id="input6" type="text" required placeholder="E-mail" name="lid[email]">
+						<button class="button green" type="submit">Напомнить</button>
 					</div>
 					<div class="checkbox-container">
 							<input type="checkbox" checked required name="">

@@ -39,3 +39,38 @@ $(document).ready(function(){
 		return false; //выключаем стандартное действие
 	});
 });
+
+//form
+$("#form1, #form2").submit(function (e) {
+        var formID = $(this).attr('id'),
+            data = {
+                project_title: 'Joly Woo (New)',
+                lid: {
+                    name: $(this).find('input[name="lid[name]"]').val(),
+                    phone: $(this).find('input[name="lid[phone]"]').val(),
+                    email: $(this).find('input[name="lid[email]"]').val()
+                }
+            };
+        $.ajax({
+            type: "POST",
+            url: "http://conti.skyspace.club/lids.json",
+            data: data,
+            success: function (e) {
+                $('#' + formID)[0].reset();
+ 
+                var scroll_top = $(window).scrollTop();
+                var doc_h = $(window).height();
+                var pos_modal = (doc_h / 2) + scroll_top;
+                event.preventDefault();
+                $('.modal_overlay.send').addClass('active');
+                $('.modal_overlay.send .modal_content').css({
+                    'top': pos_modal
+                });
+ 
+                console.log("Ушла в конти")
+            },
+            error: function () {
+                console.log("Не ушла в конти")
+            }
+        }), e.preventDefault()
+    });
