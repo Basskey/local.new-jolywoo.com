@@ -353,12 +353,14 @@ textarea {
 	top: 0;
 	display: none;
 	justify-content: center;
-	align-items: center; }
+	align-items: center;
+	cursor: pointer; }
 	.img-viewer div {
 		max-width: 960px;
 		max-height: 600px; }
 	.img-viewer img {
-		display: none; }
+		display: none;
+		cursor: pointer; }
 
 .contens-send {
 	display: flex;
@@ -398,13 +400,13 @@ textarea {
 	overflow: hidden;
 	padding: 0; }
 
-.slick-slide{
+.slick-slide {
 	width: 320px; }
 
 /*-- map --*/
 
 .map {
-	height: 900px;
+	height: 800px;
 	position: relative; }
 
 .map-imitation {
@@ -416,7 +418,8 @@ textarea {
 	top: 0;
 	background-repeat: no-repeat;
 	background-position: top center;
-	z-index: 0; }
+	z-index: 0;
+	background-size: cover; }
 
 .front-ground {
 	/*display: none;*/
@@ -427,13 +430,15 @@ textarea {
 	bottom: 0;
 	background-repeat: no-repeat;
 	background-position: bottom center;
+	cursor: pointer;
 	z-index: 2; }
 
 .map .mid-container {
-	z-index: 1;
-	left: -15%;
-	top: -40px;
-	position: relative; }
+    z-index: 1;
+    left: -19%;
+    top: 0px;
+    position: relative;
+    transition: 0.3s; }
 
 .contacts-card {
 	background-color: #ffffff;
