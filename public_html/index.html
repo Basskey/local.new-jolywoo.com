@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Joly Woo</title>
 	<meta charset="utf-8">
@@ -7,8 +8,9 @@
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-
+	<script type="text/javascript" src="assets/js/script.js"></script>
 </head>
+
 <body>
 	<div class="wrapper">
 		<section class="head">
@@ -113,10 +115,10 @@
 					<span>Ст.м.Сенная площадь/Садовая/Спасская <br class="mobile-hide">ул.&nbsp;Садовая,&nbsp;д.42</span>
 				</div>
 				<div class="gallery">
-					<img src="assets/img/gal-01.png">
-					<img src="assets/img/gal-02.png">
-					<img src="assets/img/gal-03.png">
-					<img src="assets/img/gal-04.png">
+					<img src="assets/img/pre-gal01.png" onclick="imgViewerOn(1)">
+					<img src="assets/img/pre-gal02.png" onclick="imgViewerOn(2)">
+					<img src="assets/img/pre-gal03.png" onclick="imgViewerOn(3)">
+					<img src="assets/img/pre-gal04.png" onclick="imgViewerOn(4)">
 				</div>
 			</div>
 		</section>
@@ -141,12 +143,21 @@
 		</section>
 		
 		<section class="gallery-slider">
-				<div>your content</div>
-				<div>your content</div>
-				<div>your content</div>
-				<div>your content</div>
-				<div>your content</div>
-				<div>your content</div>
+			<div>	
+				<img src="assets/img/slide01.jpg" width="320" height="320">
+			</div>
+			<div>	
+				<img src="assets/img/slide02.jpg" width="320" height="320">
+			</div>
+			<div>	
+				<img src="assets/img/slide03.jpg" width="320" height="320">
+			</div>
+			<div>	
+				<img src="assets/img/slide04.jpg" width="320" height="320">
+			</div>
+			<div>	
+				<img src="assets/img/slide05.jpg" width="320" height="320">
+			</div>
 		</section>
 		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -158,6 +169,7 @@
 				slidesToScroll: 1,
 				autoplay: true,
 				autoplaySpeed: 2000,
+				variableWidth: true,
 			  });
 			});
 		</script>
@@ -209,6 +221,15 @@
 				<span>Сайт разработан <a href="#">SKYSPACEPRO*</a></span>
 			</div>
 		</section>
+	</div>
+
+	<div class="img-viewer" onclick="imgViewerOff()">
+		<div>
+			<img id="gal_1" src="assets/img/gal01.png" width="100%">
+			<img id="gal_2" src="assets/img/gal02.png" width="100%">
+			<img id="gal_3" src="assets/img/gal03.png" width="100%">
+			<img id="gal_4" src="assets/img/gal04.png" width="100%">
+		</div>
 	</div>
 </body>
 </html>

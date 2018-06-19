@@ -196,7 +196,11 @@ textarea {
 
 .arrow {
 	position: relative;
-	top: 100px; }
+	top: 100px;
+	opacity: .7;
+	transition: .1s; }
+	.arrow:hover {
+		opacity: 1; }
 
 /*-- try new --*/
 
@@ -326,14 +330,35 @@ textarea {
 			float: left; }
 
 .gallery {
-	width: 50%;
 	max-width: 420px;
 	display: flex;
 	flex-wrap: wrap; }
 	.gallery > img {
 		margin: 5px;
-		width: 200px;
-		height: 200px; }
+		width: calc(50% - 10px);
+		height: calc(50% - 10px);
+		cursor: pointer;
+		opacity: .8;
+		transition: .3s; }
+		.gallery > img:hover {
+			opacity: 1; }
+
+.img-viewer {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, .6);
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center; }
+	.img-viewer div {
+		max-width: 960px;
+		max-height: 600px; }
+	.img-viewer img {
+		display: none; }
 
 .contens-send {
 	display: flex;
@@ -370,7 +395,11 @@ textarea {
 
 /*-- slider --*/
 .gallery-slider {
-	overflow: hidden; }
+	overflow: hidden;
+	padding: 0; }
+
+.slick-slide{
+	width: 320px; }
 
 /*-- map --*/
 
@@ -568,12 +597,7 @@ textarea {
 		margin: 0; }
 
 	.gallery {
-		width: 100%;
-		max-width: unset; }
-		.gallery img {
-			width: auto;
-			height: auto;
-			margin: 20px auto 0; }
+		margin-top: 20px; }
 
 	/*-- remind --*/
 	
@@ -605,10 +629,17 @@ textarea {
 			height: 100%;
 			min-width: 500px; }
 
+	.front-ground {
+		display: none; }
+
 	.contacts-card {
 		padding: unset;
 		box-shadow: none;
-		padding: 40px 15px; }
+		padding: 40px;
+		background-image: url(../img/bg-map-mob.png);
+		background-size: cover;
+		background-position: left bottom;
+		background-repeat: no-repeat; }
 		.contacts-card h2,
 		.contacts-card span {
 			text-align: center;
