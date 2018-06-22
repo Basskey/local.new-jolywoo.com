@@ -1,3 +1,12 @@
+//legend display
+function legendShow() {
+    $('.jolywoo-legend').fadeIn(500).css('display','flex');
+};
+
+function legendClose() {
+    $('.jolywoo-legend').fadeOut(500);
+};
+
 //gallery animation
 var idNum //
 function imgViewerOn(n) {
