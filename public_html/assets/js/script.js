@@ -94,6 +94,9 @@ $("#form1, #form2").submit(function (e) {
         }), e.preventDefault()
     });
 
+// window height detection
 $(document).ready(function(){
-    $('.head').css('height',$(window).height());
+    var hDetect = $(window).height();;
+    if (hDetect >= 700) {
+        $('.head').css('height',$(window).height()); }
 });
