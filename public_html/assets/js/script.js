@@ -1,3 +1,8 @@
+//registration succes modal close
+function thankYouClose() {
+    $('.thank-you').fadeOut(500);
+};
+
 //legend display
 function legendShow() {
     $('.jolywoo-legend').fadeIn(500).css('display','flex');
@@ -6,6 +11,8 @@ function legendShow() {
 function legendClose() {
     $('.jolywoo-legend').fadeOut(500);
 };
+
+
 
 //gallery animation
 var idNum //
@@ -77,9 +84,12 @@ $("#form1, #form2").submit(function (e) {
                 });
  
                 console.log("Ушла в конти")
+                $('.thank-you').fadeIn(500).css('display','flex');
+                
             },
             error: function () {
                 console.log("Не ушла в конти")
+                alert('Что-то тут не так. Попробуйте еще..');
             }
         }), e.preventDefault()
     });
