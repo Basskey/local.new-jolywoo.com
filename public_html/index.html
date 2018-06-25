@@ -11,6 +11,8 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 	<script async type="text/javascript" src="assets/js/script.js"></script>
+	<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
 </head>
 
 <body>
@@ -130,10 +132,24 @@
 					<div>
 						<textarea required placeholder="Ради чего вы хотите поехать во Вьетнам?" name="Story"></textarea>
 						<div class="contens-send">
-							<a href="#" class="button" onclick="yaCounter49311742.reachGoal ('tell_friends'); return true;">Рассказать друзьям</a>
+							<script type="text/javascript">
+							document.write(VK.Share.button(
+								{
+								url: 'https://vk.com/event168050570', 
+								title: 'Марафон призов и подарков от Joly Woo',
+								image: 'https://pp.userapi.com/c830408/v830408498/132c45/jvSSQ1ml5IU.jpg',
+							  	noparse: true},
+								{
+								type: 'custom',
+								text: '<span class="button share" onclick="yaCounter49311742.reachGoal (\'tell_friends\'); return true;">Рассказать друзьям</span>'}));
+							</script>
 							<button class="button green" type="submit" onclick="yaCounter49311742.reachGoal ('send_story'); return true;">Отправить</button>
 						</div>
-					</div>
+
+
+
+
+			</div>
 				</form>
 				<p>Главный приз — сертификат на оформление путевки во Вьетнам с открытыми датами. Главный победитель будет выбран случайным образом среди всех участников розыгрыша 15 июля на открытии Joly Woo на Садовой.</p>
 				<h2 class="txt-green">Следите за новостями и делитесь отзывами</h2>
