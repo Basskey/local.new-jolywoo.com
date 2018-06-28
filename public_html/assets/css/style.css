@@ -661,7 +661,84 @@ textarea {
 	font-weight: 500;
 	padding: 20px 0; }
 
+.side-menu {
+	background-color: #191918;
+	width: 320px;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	justify-content: space-between;
+	color: #b3b3b1; }
+	.side-menu .menu-btn {
+		position: absolute; }
+	.side-menu ul {
+		list-style: none; }
+	.side-menu li {
+		line-height: 3em; }
 
+.pushy-active #hamburger {
+    right: 310px;
+    z-index: 9999; }
+#hamburger {
+    box-sizing: border-box;
+    display: block;
+    width: 70px;
+    height: 45px;
+    top: 30px;
+    right: 335px;
+    position: fixed;
+    z-index: 101;
+    cursor: pointer;
+    transition: right .4s ease; }
+
+.pushy-active #hamburger:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+#hamburger span, .pushy-active #hamburger:after, .pushy-active #hamburger:before {
+    top: 20px; }
+#hamburger span, #hamburger:after, #hamburger:before {
+    transition: none .2s ease .2s;
+    transition-property: transform, top, bottom, left, opacity;
+    transition-property: transform, top, bottom, left, opacity, -webkit-transform; }
+#hamburger:before {
+    top: 10px; }
+#hamburger span, #hamburger:after, #hamburger:before {
+    background: #e8e8e8;
+    content: '';
+    display: block;
+    width: 28px;
+    height: 3px;
+    position: absolute;
+    left: 20px;
+    border-radius: 4px; }
+#hamburger:before {
+    top: 10px; }
+
+.pushy-active #hamburger:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+#hamburger span, .pushy-active #hamburger:after, .pushy-active #hamburger:before {
+    top: 20px; }
+#hamburger span, #hamburger:after, #hamburger:before {
+    transition: none .2s ease .2s;
+    transition-property: transform, top, bottom, left, opacity;
+    transition-property: transform, top, bottom, left, opacity, -webkit-transform; }
+#hamburger:after {
+    top: 30px; }
+#hamburger span, #hamburger:after, #hamburger:before {
+    background: #e8e8e8;
+    content: '';
+    display: block;
+    width: 28px;
+    height: 3px;
+    position: absolute;
+    left: 20px;
+    border-radius: 4px; }
+#hamburger:after {
+    top: 30px; }
 
 /*----- MOBILE -----*/
 
