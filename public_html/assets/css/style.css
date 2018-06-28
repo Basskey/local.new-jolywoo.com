@@ -305,8 +305,8 @@ textarea {
 		width: 100%; }
 
 .arrow {
-	position: relative;
-	top: 100px;
+	position: absolute;
+	bottom: 20px;
 	opacity: .7;
 	transition: .1s; }
 	.arrow:hover {
@@ -717,9 +717,6 @@ textarea {
 	.head {
 		height: unset; }
 
-	.arrow {
-		top: 40px; }
-
 	/*-- try new--*/
 
 	.pluses-container > div {
@@ -866,6 +863,20 @@ textarea {
 		flex-direction: column;
 		align-items: center; }
 
-	.head span {
-		margin-bottom: 30px; }
+	.head {
+		padding: 50px 10px 20px;
+    	justify-content: space-between; }
+		.head span {
+			margin-bottom: 30px; }
+
+    .arrow {
+    	position: relative;
+    	bottom: unset; }
+
+}
+
+@media screen and (max-height: 670px) {
+	.arrow {
+    	position: relative;
+    	bottom: unset; }
 }
