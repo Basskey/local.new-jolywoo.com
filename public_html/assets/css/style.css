@@ -693,21 +693,33 @@ textarea {
     width: 70px;
     height: 45px;
     top: 30px;
-    right: 335px;
+    right: 325px;
     position: absolute;
     z-index: 101;
     cursor: pointer;
     transition: right .4s ease; }
 
-#hamburger:before {
-    top: 10px; }
+#hamburger span {
+	transition: .3s;
+}
 
+#top {
+	top: 10px; }
+#middle {
+	top: 20px; }
+#bottom {
+	top: 30px; }
 
-#hamburger span, .pushy-active #hamburger:after, .pushy-active #hamburger:before {
-    top: 20px; }
-#hamburger:after {
-    top: 30px; }
-#hamburger span, #hamburger:after, #hamburger:before {
+#top.active {
+	top: 10px;
+	transform: rotate(45deg); }
+#middle.active {
+	display: none; }
+#bottom.active {
+	top: 10px;
+	transform: rotate(-45deg); }
+
+#hamburger span {
     background: #e8e8e8;
     content: '';
     display: block;
@@ -716,8 +728,6 @@ textarea {
     position: absolute;
     left: 20px;
     border-radius: 4px; }
-#hamburger:after {
-    top: 30px; }
 
 /*----- MOBILE -----*/
 

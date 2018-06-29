@@ -103,7 +103,7 @@ $(document).ready(function(){
 
 //side menu
 $(document).ready(function sideMenuToggle(){
-    $('.side-menu, .side-menu *, #hamburger').click(function() {
-        $('.side-menu').toggleClass('active');
+    $('.side-menu, .side-menu *').click(function() {
+        $('.side-menu, #top, #middle, #bottom').toggleClass('active');
     });
 });
