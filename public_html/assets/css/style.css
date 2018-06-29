@@ -701,6 +701,7 @@ textarea {
 
 #hamburger span {
 	transition: .3s;
+	cursor: pointer;
 }
 
 #top {
@@ -710,12 +711,12 @@ textarea {
 #bottom {
 	top: 30px; }
 
-#top.active {
+.active #top {
 	top: 10px;
 	transform: rotate(45deg); }
-#middle.active {
+.active #middle {
 	display: none; }
-#bottom.active {
+.active #bottom {
 	top: 10px;
 	transform: rotate(-45deg); }
 

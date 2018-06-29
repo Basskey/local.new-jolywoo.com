@@ -102,8 +102,9 @@ $(document).ready(function(){
 });
 
 //side menu
-$(document).ready(function sideMenuToggle(){
+$(document).ready(function(){
     $('.side-menu, .side-menu *').click(function() {
-        $('.side-menu, #top, #middle, #bottom').toggleClass('active');
+        $('.side-menu').toggleClass('active');
+        return false;
     });
 });
