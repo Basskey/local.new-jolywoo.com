@@ -157,7 +157,7 @@ textarea {
 	background-image: url(../img/smm-sprite.png);
 	transition: unset; }
 	.smm:hover {
-		background-position-y: 32px;
+		background-position-y: -31px;
 	}
 
 .vk {
@@ -667,19 +667,26 @@ textarea {
 	height: 100%;
 	position: fixed;
 	top: 0;
-	right: 0;
+	right: -320px;
 	justify-content: space-between;
-	color: #b3b3b1; }
+	color: #b3b3b1;
+	transition: .5s;
+	z-index: 2; }
 	.side-menu .menu-btn {
 		position: absolute; }
 	.side-menu ul {
 		list-style: none; }
 	.side-menu li {
 		line-height: 3em; }
+	.side-menu .smm {
+		background-position-y: 32px; }
+		.side-menu .smm:hover {
+			background-position-y: -31px; }
 
-.pushy-active #hamburger {
-    right: 310px;
-    z-index: 9999; }
+.side-menu.active {
+	right: 0;
+}
+
 #hamburger {
     box-sizing: border-box;
     display: block;
@@ -687,45 +694,17 @@ textarea {
     height: 45px;
     top: 30px;
     right: 335px;
-    position: fixed;
+    position: absolute;
     z-index: 101;
     cursor: pointer;
     transition: right .4s ease; }
 
-.pushy-active #hamburger:before {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg); }
-#hamburger span, .pushy-active #hamburger:after, .pushy-active #hamburger:before {
-    top: 20px; }
-#hamburger span, #hamburger:after, #hamburger:before {
-    transition: none .2s ease .2s;
-    transition-property: transform, top, bottom, left, opacity;
-    transition-property: transform, top, bottom, left, opacity, -webkit-transform; }
-#hamburger:before {
-    top: 10px; }
-#hamburger span, #hamburger:after, #hamburger:before {
-    background: #e8e8e8;
-    content: '';
-    display: block;
-    width: 28px;
-    height: 3px;
-    position: absolute;
-    left: 20px;
-    border-radius: 4px; }
 #hamburger:before {
     top: 10px; }
 
-.pushy-active #hamburger:after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg); }
+
 #hamburger span, .pushy-active #hamburger:after, .pushy-active #hamburger:before {
     top: 20px; }
-#hamburger span, #hamburger:after, #hamburger:before {
-    transition: none .2s ease .2s;
-    transition-property: transform, top, bottom, left, opacity;
-    transition-property: transform, top, bottom, left, opacity, -webkit-transform; }
 #hamburger:after {
     top: 30px; }
 #hamburger span, #hamburger:after, #hamburger:before {

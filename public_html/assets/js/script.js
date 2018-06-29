@@ -100,3 +100,10 @@ $(document).ready(function(){
     if (hDetect >= 700) {
         $('.head').css('height',$(window).height()); }
 });
+
+//side menu
+$(document).ready(function sideMenuToggle(){
+    $('.side-menu, .side-menu *, #hamburger').click(function() {
+        $('.side-menu').toggleClass('active');
+    });
+});
