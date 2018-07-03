@@ -450,7 +450,7 @@ textarea {
 	color: #ffffff; }
 	.menu > div {
 		width: 50%;
-		height: 354px;
+		height: 760px;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
@@ -464,14 +464,21 @@ textarea {
 	.menu p {
 		max-width: 300px; }
 
+.menu-content {
+	height: calc(50% + 23px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 300px; }
+
 .left {
-	background-image: url(../img/bg-left.png);
+	background-image: url(../img/bg-left.jpg);
 	background-position: center right;
 	text-align: right;
 	align-items: flex-end; }
 
 .right {
-	background-image: url(../img/bg-right.png);
+	background-image: url(../img/bg-right.jpg);
 	background-position: center left;
 	text-align: left; }
 
@@ -751,9 +758,6 @@ textarea {
 	h2 {
 		font-size: 20px; }
 
-	p {
-		font-size: 15px; }
-
 	section {
 		padding: 50px 15px; }
 
@@ -828,8 +832,7 @@ textarea {
 	.menu > div {
 		min-width: unset;
 		width: 100%;
-		padding: 40px 15px;
-		height: 350px; }
+		padding: 40px; }
 
 	/*-- places --*/
 
@@ -949,6 +952,15 @@ textarea {
     	position: relative;
     	bottom: unset; }
 
+}
+
+@media screen and (max-width: 640px) {
+    .menu > div {
+    	align-items: center;
+    	text-align: center;
+    	padding: 40px 15px; }
+    .menu a {
+    	margin: 0 auto; }
 }
 
 @media screen and (max-height: 670px) {
