@@ -671,7 +671,10 @@ textarea {
 	justify-content: space-between;
 	color: #b3b3b1;
 	transition: .5s;
-	z-index: 2; }
+	z-index: 2;
+	padding: 0;
+	width: 100%;
+	max-width: 320px; }
 	.side-menu .menu-btn {
 		position: absolute; }
 	.side-menu ul {
@@ -684,15 +687,22 @@ textarea {
 			background-position-y: -31px; }
 
 .side-menu.active {
-	right: 0;
-}
+	right: 0; }
+
+.side-menu__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: auto;
+	padding: 30px 15px;
+	height: 100%; }
 
 #hamburger {
     box-sizing: border-box;
     display: block;
     width: 70px;
     height: 45px;
-    top: 30px;
+    top: 25px;
     right: 325px;
     position: absolute;
     z-index: 101;
@@ -701,8 +711,7 @@ textarea {
 
 #hamburger span {
 	transition: .3s;
-	cursor: pointer;
-}
+	cursor: pointer; }
 
 #top {
 	top: 10px; }
